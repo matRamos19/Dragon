@@ -1,0 +1,72 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fdfdfd;
+  margin: 0;
+  padding: 0;
+  background-image: url('imagnes/1.jpg');
+  background-size: cover; /* O usa 'contain' si prefieres */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #ffcc00; 
+  margin-bottom: 20px;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #7ea1e4; 
+  color: #1a303f;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1a303f; 
+  color: rgb(105, 107, 202); 
+}
+
+.personajes-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Tres columnas */
+  gap: 100px; 
+  padding: 20px;
+  padding-left: 20px;
+  justify-items: center; /* Centra los cuadros en el grid */
+}
+
+.personaje-card {
+  background-color: #1a303f;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  width: 150px; /* Ancho fijo */
+  height: 450px; /* Altura fija, ajusta según tus necesidades */
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; /* Centra el contenido dentro del cuadro */
+}
+
+.personaje-card img {
+  max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+  max-height: 47%; /* Ajusta la altura máxima de la imagen */
+  object-fit: contain; /* Asegura que la imagen se mantenga dentro del cuadro */
+  border-radius: 4px; 
+}
